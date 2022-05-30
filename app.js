@@ -5,6 +5,9 @@ const exphbs = require('express-handlebars');
 // App Setup
 const app = express();
 
+// Styles
+app.use(express.static('public'));
+
 // Require tenorjs near the top of the file
 const Tenor = require("tenorjs").client({
   // Replace with your own key
